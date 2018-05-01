@@ -20,3 +20,24 @@ for (var i = 0; i < totalChoices; i++) {
     odd.append(choice);
   }
 }
+
+
+class List {
+  constructor(size) {
+    var DEFAULT_SIZE = 10;
+
+    // Create a fixed-size array. Start the size at zero.
+    this.data = new Array(DEFAULT_SIZE);
+    this.size = 0;
+  }
+  append(item) {
+    this.data[this.size] = item;
+    this.size++;
+  }
+}
+
+// Create the list
+var myList = new List();
+
+// Add something!
+myList.append("Yay!");
